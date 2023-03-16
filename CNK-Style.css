@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #8baf27;
+  --secondary-color: rgb(77, 90, 77);
+  --background-color: #222;
+  --text-color: #fff;
+  --header-background-color: #111;
+  --header-border-color: rgb(100, 109, 100);
+  --nav-background-color: #191f16;
+  --nav-border-color: rgb(90, 94, 90);
+  --nav-text-color: #fff;
+  --nav-text-hover-color: #435316;
+  --nav-text-hover-background-color: #f5f5f5;
+  --main-background-color: #111;
+  --main-border-color: rgb(119, 126, 119);
+  --footer-background-color: #333;
+  --footer-border-color: #0f0;
+  --footer-text-color: #fff;
+  --chat-background-image: url("batcat.jpg");
+  --button-background-color: rgb(71, 64, 62);
+  --button-text-color: #fff;
+  --button-hover-background-color: #333;
+  --button-hover-text-color: rgb(145, 138, 98);
+  --tab-border-color: #ccc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+/* En-tête */
+header {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--header-background-color);
+  border-bottom: 5px solid var(--header-border-color);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-family: Impact, sans-serif;
+}
+
+/* Menu de navigation */
+.navigation {
+  height: 40px; /* ajustez la hauteur en fonction de vos besoins */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--nav-border-color);
+  border-radius: 5px 5px 0 0;
+  background-color: var(--nav-background-color);
+  position: relative; /* ajout */
+}
+
+.navigation:before, .navigation:after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* ajustez la position en fonction de l'épaisseur de la bordure */
+  width: 100%;
+  height: 1px; /* ajustez la hauteur en fonction de l'épaisseur de la bordure */
+  background-color: var(--nav-border-color);
+}
+
+.navigation:before {
+  left: -1px; /* ajustez la position en fonction de l'épaisseur de la bordure */
+}
+
+.navigation:after {
+  right: -1px; /* ajustez la position en fonction de l'épaisseur de la bordure */
+}
+
+.navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  color: var(--nav-text-color);
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.navigation li a:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 1px solid var(--tab-border-color);
+  border-radius: 5px 5px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navigation li a:hover:before {
+  opacity: 1;
+}
+
+.navigation li a:hover {
+  color: var(--nav-text-hover-color);
+  background-color: var(--nav-text-hover-background-color);
+}
+
+.navigation li a.active {
+  color: red;
+}
+/* Contenu principal */
+main {
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--main-background-color);
+  border: 5px solid var(--main-border-color);
+}
+
+/* Onglets */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--tab-border-color);
+  border-radius: 0 0 5px 5px;
+  background-color: var(--nav-background-color);
+}
+
+.tabs li {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  color: var(--nav-text-color);
+  text-decoration: none;
+  border-radius: 0 0 5px 5px;
+  margin: 0 2px;
+  border-bottom: 1px solid var(--tab-border-color);
+}
+
+.tabs li a:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 1px solid var(--tab-border-color);
+  border-radius: 5px 5px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tabs li:first-child a:before {
+  border-radius: 5px 0 0 5px;
+}
+
+.tabs li:last-child a:before {
+  border-radius: 0 5px 5px 0;
+}
+
+.tabs li a:hover:before {
+  opacity: 1;
+}
+
+.tabs li a.active {
+  color: red;
+  background-color: var(--nav-text-hover-background-color);
+  border-bottom: none;
+}
+
+/* Pied de page */
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--footer-background-color);
+  border-top: 5px solid var(--footer-border-color);
+  color: var(--footer-text-color);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}

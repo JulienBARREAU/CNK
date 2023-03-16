@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Confucius Ninja Kitten</title>
+    <link rel="stylesheet" href="CNK-Style.css">
+    <script src="cnkjavascript.js"></script>
+</head>
+<body>
+    <header>
+        <img src="bannierecnk.png" alt="Confucius Ninja Kitten">
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="legend.html">Legend of Ninja Kitten</a></li>
+            <li><a href="whois.html">Who is really CNK ?</a></li>
+            <li><a href="platon.html">Platon, Ninja Master</a></li>
+            <li><a href="videos.html">Viral videos</a></li>
+            <li><a href="edits.html">Edits</a></li>
+            <li><a href="redbubble.html">Our Redbubble Shop</a></li>
+            <li><a href="crazy.html">Our Crazy Human</a></li>
+            <li><a href="support.html">How to support us</a></li>
+            <li><a href="newpage.html">New Page</a></li> <!-- Nouvelle page ajoutée -->
+        </ul>
+    </nav>
+    <main>
+        <!-- contenu de la page -->
+    </main>
+    <aside>
+        <h2>Some music ?</h2>
+        <audio controls>
+            <source src="musique1.mp3" type="audio/mpeg">
+            <source src="musique1.ogg" type="audio/ogg">
+        </audio>
+        <h2>Publicités</h2>
+        <div class="publicite">
+            <!-- code pour l'emplacement de publicité Google AdSense -->
+        </div>
+        <div class="publicite">
+            <!-- code pour l'emplacement de publicité Google AdSense -->
+        </div>
+        <h2>Réseaux sociaux</h2>
+        <ul class="reseaux-sociaux">
+            <li><a href="https://www.instagram.com/moncompte/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/moncompte/">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@moncompte/">TikTok</a></li>
+            <li><a href="https://twitter.com/moncompte/">Twitter</a></li>
+            <li><a href="https://www.youtube.com/user/moncompte/">YouTube</a></li>
+            <li><a href="https://www.buymeacoffee.com/moncompte/">BuyMeACoffee</a></li>
+        </ul>
+        <h2>New Section</h2> <!-- Nouvelle section ajoutée -->
+        <p>Some new content</p> <!-- Nouveau contenu ajouté -->
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
