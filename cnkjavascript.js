@@ -15,6 +15,12 @@ navLinks.forEach(link => {
       if (otherLink !== this) {
         otherLink.classList.remove('active');
       }
+      fetch("cnkaccueil.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("content").innerHTML = data;
+    });
+
     });
   });
 });
