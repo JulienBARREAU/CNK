@@ -17,11 +17,11 @@ navLinks.forEach(link => {
       }
     });
 
-    // Chargement du contenu de cnkaccueil.html et mise à jour de l'élément "content"
+    // Charger le contenu de la page cnkaccueil.html
     fetch("cnkaccueil.html")
-      .then(response => response.text())
-      .then(data => {
+    .then(response => response.text())
+    .then(data => {
         document.getElementById("content").innerHTML = data;
-      });
+    });
   });
 });
