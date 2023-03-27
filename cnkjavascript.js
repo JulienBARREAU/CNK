@@ -25,6 +25,19 @@ window.addEventListener('load', function() {
     xhr.send();
 });
 
+// Utilisez cette fonction pour charger le contenu de chaque page lorsque l'utilisateur clique sur un lien
+function loadContent(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('content').innerHTML = this.responseText;
+        }
+    };
+    xhr.open('GET', url);
+    xhr.send();
+}
+
+
       }
     });
   });
