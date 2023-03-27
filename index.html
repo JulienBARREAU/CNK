@@ -24,29 +24,40 @@
         </ul>
     </nav>
     <main>
-        hrtshhhshsshhsshhsh
+        <aside>
+            <h2>Some music ?</h2>
+            <audio controls>
+                <source src="musique1.mp3" type="audio/mpeg">
+                <source src="musique1.ogg" type="audio/ogg">
+            </audio>
+            <h2>Publicités</h2>
+            <div class="publicite">
+                <!-- code pour l'emplacement de publicité Google AdSense -->
+            </div>
+            <div class="publicite">
+                <!-- code pour l'emplacement de publicité Google AdSense -->
+            </div>
+            <h2>Réseaux sociaux</h2>
+            <ul class="reseaux-sociaux">
+                <li><a href="https://www.instagram.com/moncompte/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/moncompte/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@moncompte/">TikTok</a></li>
+                <li><a href="https://twitter.com/moncompte/">Twitter</a></li>
+                <li><a href="https://www.youtube.com/user/moncompte/">YouTube</a></li>
+                <li><a href="https://www.buymeacoffee.com/moncompte/">BuyMeACoffee</a></li>
+            </ul>
+        </aside>
+        <div id="content">
+            <!-- Contenu de la page d'accueil chargé dynamiquement -->
+        </div>
     </main>
-    <aside>
-        <h2>Some music ?</h2>
-        <audio controls>
-            <source src="musique1.mp3" type="audio/mpeg">
-            <source src="musique1.ogg" type="audio/ogg">
-        </audio>
-        <h2>Publicités</h2>
-        <div class="publicite">
-            <!-- code pour l'emplacement de publicité Google AdSense -->
-        </div>
-        <div class="publicite">
-            <!-- code pour l'emplacement de publicité Google AdSense -->
-        </div>
-        <h2>Réseaux sociaux</h2>
-        <ul class="reseaux-sociaux">
-            <li><a href="https://www.instagram.com/moncompte/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/moncompte/">Facebook</a></li>
-            <li><a href="https://www.tiktok.com/@moncompte/">TikTok</a></li>
-            <li><a href="https://twitter.com/moncompte/">Twitter</a></li>
-            <li><a href="https://www.youtube.com/user/moncompte/">YouTube</a></li>
-            <li><a href="https://www.buymeacoffee.com/moncompte/">BuyMeACoffee</a></li>
-        </ul>
-    </aside>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#content").load("cnkaccueil.html");
+        });
+    </script>
+    
+    
     
