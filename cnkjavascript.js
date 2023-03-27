@@ -14,6 +14,17 @@ navLinks.forEach(link => {
     navLinks.forEach(otherLink => {
       if (otherLink !== this) {
         otherLink.classList.remove('active');
+window.addEventListener('load', function() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('content').innerHTML = this.responseText;
+        }
+    };
+    xhr.open('GET', 'cnkaccueil.html');
+    xhr.send();
+});
+
       }
     });
   });
