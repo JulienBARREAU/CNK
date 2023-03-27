@@ -8,8 +8,8 @@
   --nav-background-color: #191f16;
   --nav-border-color: rgb(90, 94, 90);
   --nav-text-color: #fff;
-  --nav-text-hover-color: #435316;
-  --nav-text-hover-background-color: #f5f5f5;
+  --nav-text-hover-color: #5d741f;
+  --nav-text-hover-background-color: #acacac;
   --main-background-color: #111;
   --main-border-color: rgb(119, 126, 119);
   --footer-background-color: #333;
@@ -20,7 +20,7 @@
   --button-text-color: #fff;
   --button-hover-background-color: #333;
   --button-hover-text-color: rgb(145, 138, 98);
-  --tab-border-color: #ccc;
+  --tab-border-color: none;
 }
 
 body {
@@ -131,8 +131,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--tab-border-color);
-  border-radius: 0 0 5px 5px;
+  border: none;
   background-color: var(--nav-background-color);
 }
 
@@ -161,9 +160,10 @@ main {
   right: -5px;
   border: 1px solid var(--tab-border-color);
   border-radius: 5px 5px 0 0;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
 
 .tabs li:first-child a:before {
   border-radius: 5px 0 0 5px;
